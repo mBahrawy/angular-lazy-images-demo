@@ -1,0 +1,11 @@
+<section *ngFor="let image of images; let i = index; let even = even" #section>
+    <img
+      lazy-load-image
+      [lazySrc]="image"
+      [thumbSrc]="thumb_images[i]"
+      [thumbIdentifier]="'q=50'"
+      [errorLazySrc]="'https://via.placeholder.com/500/ddd/ff0000?text=Error'"
+      [debug]="false"
+      [hasLoader]="true"
+    />
+  </section>

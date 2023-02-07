@@ -1,0 +1,64 @@
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+section:nth-child(even) {
+  background-color: var(--primary);
+}
+
+section:nth-child(odd) {
+  background-color: var(--accent);
+}
+
+img[lazy-load-image] {
+  box-shadow: 3px 2px 20px 3px rgb(0 0 0 / 30%);
+  width: 80vw;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+img[lazy-load-image] {
+  &:not(.image-loaded, .thumb-loaded, .image-failed, .no-loader) {
+    background-color: #000;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    background-color: rgb(190, 190, 190);
+  }
+
+  50.0% {
+    background-color: #ddd;
+  }
+
+  100.0% {
+    background-color: rgb(190, 190, 190);
+  }
+}
+
+@keyframes animation {
+  0% {
+    background-color: rgb(190, 190, 190);
+  }
+
+  50.0% {
+    background-color: #ddd;
+  }
+
+  100.0% {
+    background-color: rgb(190, 190, 190);
+  }
+}
