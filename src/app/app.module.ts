@@ -3,20 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestingImgaesLazyLoadingComponent } from './core/components/testing-imgaes-lazy-loading/testing-imgaes-lazy-loading.component';
-import { LazyLoadImagesDirective } from './core/directives/lazy-load-images.directive';
+import { NgLazyImagesModule } from 'ng-lazy-images';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TestingImgaesLazyLoadingComponent,
-    LazyLoadImagesDirective
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, NgLazyImagesModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
