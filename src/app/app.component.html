@@ -1,12 +1,10 @@
 <h1>Angular lazy loading library</h1>
 <small>By: Mohamed Bahrawy</small>
 
-<section *ngFor="let image of images; let i = index; let even = even" #section>
+<section *ngFor="let image of images; let i = index; let even = even">
   <img
     ng-lazy-images
     [lazySrc]="image"
-    [thumbSrc]="thumb_images[i]"
-    [thumbIdentifier]="'q=50'"
     [errorLazySrc]="'https://via.placeholder.com/500/ddd/ff0000?text=Error'"
     [debug]="false"
     [hasLoader]="true"

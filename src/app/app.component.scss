@@ -15,7 +15,7 @@ section:nth-child(odd) {
   background-color: var(--accent);
 }
 
-img[ng-lazy-images] {
+::ng-deep img[ng-lazy-images] {
   box-shadow: 3px 2px 20px 3px rgb(0 0 0 / 30%);
   width: 80vw;
   height: 70vh;
