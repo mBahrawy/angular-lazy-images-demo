@@ -5,8 +5,10 @@
   <img
     ng-lazy-images
     [lazySrc]="image"
+    [thumbSrc]="thumb_images[i]"
     [errorLazySrc]="'https://via.placeholder.com/500/ddd/ff0000?text=Error'"
     [debug]="false"
+    [disableCaching]="true"
     [hasLoader]="true"
   />
 </section>

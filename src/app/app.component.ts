@@ -3,28 +3,25 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   images = [
-    `https://images.unsplash.com/photo-1638870413179-50cb2a978e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=2040&q=100؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1631023099977-d1f2b909e6c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=2040&q=100؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1638858656199-a40a242c5675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=2040&q=100؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1660169377717-a7a2f84c6737?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=2040&q=100؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1660169376132-409f66fedcee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=2040&q=100؟${Date.now()}`,
+    "https://live.staticflickr.com/65535/52682374618_36b03e7131_k.jpg",
+    "https://live.staticflickr.com/65535/52681358597_f29901c89e_k.jpg",
+    "https://live.staticflickr.com/65535/52681876821_78635a91e6_k.jpg",
+    "https://live.staticflickr.com/65535/52682305735_85ff72aacc_k.jpg",
+    "https://live.staticflickr.com/65535/52682305345_563c3af82d_k.jpg",
   ];
   thumb_images = [
-    `https://images.unsplash.com/photo-1638870413179-50cb2a978e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=100&q=50؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1631023099977-d1f2b909e6c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=100&q=50؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1638858656199-a40a242c5675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=100&q=50؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1660169377717-a7a2f84c6737?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=100&q=50؟${Date.now()}`,
-    `https://images.unsplash.com/photo-1660169376132-409f66fedcee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&w=100&q=50؟${Date.now()}`,
+    "https://live.staticflickr.com/65535/52682374618_e264583d1a_t.jpg",
+    "https://live.staticflickr.com/65535/52681358597_8a1616150f_t.jpg",
+    "https://live.staticflickr.com/65535/52681876821_de1bb7c98a_t.jpg",
+    "https://live.staticflickr.com/65535/52682305735_ffd43a3a44_t.jpg",
+    "https://live.staticflickr.com/65535/52682305345_a017a5bb10_t.jpg",
   ];
-
 }
